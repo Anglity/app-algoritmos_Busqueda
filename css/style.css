@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+    color: #fff;
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 850px;
+    max-width: 100%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+  }
+  
+  h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #00BCD4;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0097A7;
+  }
+  
+  .buscado {
+    margin: 20px 0;
+    font-weight: 600;
+    color: #FFEB3B;
+  }
+  
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .algoritmo {
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+    padding: 12px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .time {
+    color: #FFC107;
+    font-weight: 600;
+    float: right;
+  }
+  
+  .bar {
+    height: 12px;
+    background: linear-gradient(to right, #FF5722, #FF9800);
+    width: 0;
+    border-radius: 10px;
+    margin-top: 12px;
+    transition: width 0.3s ease-out;
+  }
+  

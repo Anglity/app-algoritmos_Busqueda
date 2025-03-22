@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🚀 Algoritmos en Paralelo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Comparador de Algoritmos</h1>
+    <button id="start">▶️ Iniciar Comparación</button>
+    <div class="buscado">🎲 Números buscados: <span id="numero-buscado">...</span></div>
+
+    <div class="results">
+      <div class="algoritmo" id="secuencial">
+        🔍 Búsqueda Secuencial
+        <span class="time">⏳ Esperando...</span>
+        <div class="bar" id="bar-secuencial"></div>
+      </div>
+      <div class="algoritmo" id="binaria">
+        🎯 Búsqueda Binaria
+        <span class="time">⏳ Esperando...</span>
+        <div class="bar" id="bar-binaria"></div>
+      </div>
+      <div class="algoritmo" id="burbuja">
+        🫧 Ordenamiento Burbuja
+        <span class="time">⏳ Esperando...</span>
+        <div class="bar" id="bar-burbuja"></div>
+      </div>
+      <div class="algoritmo" id="quick">
+        ⚡ Quick Sort
+        <span class="time">⏳ Esperando...</span>
+        <div class="bar" id="bar-quick"></div>
+      </div>
+      <div class="algoritmo" id="insercion">
+        📥 Ordenamiento Inserción
+        <span class="time">⏳ Esperando...</span>
+        <div class="bar" id="bar-insercion"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
