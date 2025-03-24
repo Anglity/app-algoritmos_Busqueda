@@ -7,42 +7,119 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos adicionales para la nueva estructura */
+    .algoritmo {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    
+    .algoritmo-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+    
+    .algoritmo-detalle {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .algoritmo-nombre {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .memory {
+      text-align: start;
+      font-size: 0.9em;
+    }
+    
+    .time {
+      text-align: right;
+      margin-left: 15px;
+    }
+    
+    .bar {
+      width: 100%;
+      height: 10px;
+      background-color: #e2e8f0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .bar div {
+      height: 100%;
+      background-color: #77ff65;
+      width: 0%;
+      transition: width 0.2s ease-in-out;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>🚀 Comparador de Algoritmos</h1>
     <button id="start">▶️ Iniciar Comparación</button>
     <div class="buscado">🎲 Números buscados: <span id="numero-buscado">...</span></div>
-
     <div class="results">
       <div class="algoritmo" id="secuencial">
-        🔍 Búsqueda Secuencial
-        <span class="time">⏳ Esperando...</span>
-        <div class="bar" id="bar-secuencial"></div>
+        <div class="algoritmo-info">
+          <div class="algoritmo-detalle">
+            <div class="algoritmo-nombre">🔍 Búsqueda Secuencial</div>
+            <span class="memory">🧠 Memoria: --</span>
+          </div>
+          <span class="time">⏳ Esperando...</span>
+        </div>
+        <div class="bar" id="bar-secuencial"><div></div></div>
       </div>
+      
       <div class="algoritmo" id="binaria">
-        🎯 Búsqueda Binaria
-        <span class="time">⏳ Esperando...</span>
-        <div class="bar" id="bar-binaria"></div>
+        <div class="algoritmo-info">
+          <div class="algoritmo-detalle">
+            <div class="algoritmo-nombre">🎯 Búsqueda Binaria</div>
+            <span class="memory">🧠 Memoria: --</span>
+          </div>
+          <span class="time">⏳ Esperando...</span>
+        </div>
+        <div class="bar" id="bar-binaria"><div></div></div>
       </div>
+      
       <div class="algoritmo" id="burbuja">
-        🫧 Ordenamiento Burbuja
-        <span class="time">⏳ Esperando...</span>
-        <div class="bar" id="bar-burbuja"></div>
+        <div class="algoritmo-info">
+          <div class="algoritmo-detalle">
+            <div class="algoritmo-nombre">🫧 Ordenamiento Burbuja</div>
+            <span class="memory">🧠 Memoria: --</span>
+          </div>
+          <span class="time">⏳ Esperando...</span>
+        </div>
+        <div class="bar" id="bar-burbuja"><div></div></div>
       </div>
+      
       <div class="algoritmo" id="quick">
-        ⚡ Quick Sort
-        <span class="time">⏳ Esperando...</span>
-        <div class="bar" id="bar-quick"></div>
+        <div class="algoritmo-info">
+          <div class="algoritmo-detalle">
+            <div class="algoritmo-nombre">⚡ Quick Sort</div>
+            <span class="memory">🧠 Memoria: --</span>
+          </div>
+          <span class="time">⏳ Esperando...</span>
+        </div>
+        <div class="bar" id="bar-quick"><div></div></div>
       </div>
+      
       <div class="algoritmo" id="insercion">
-        📥 Ordenamiento Inserción
-        <span class="time">⏳ Esperando...</span>
-        <div class="bar" id="bar-insercion"></div>
+        <div class="algoritmo-info">
+          <div class="algoritmo-detalle">
+            <div class="algoritmo-nombre">📥 Ordenamiento Inserción</div>
+            <span class="memory">🧠 Memoria: --</span>
+          </div>
+          <span class="time">⏳ Esperando...</span>
+        </div>
+        <div class="bar" id="bar-insercion"><div></div></div>
       </div>
     </div>
   </div>
-
   <script src="js/main.js"></script>
 </body>
 </html>
